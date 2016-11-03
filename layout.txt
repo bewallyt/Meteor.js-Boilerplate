@@ -1,0 +1,23 @@
+imports/
+  startup/
+    client/
+      stylesheets/             # initializes global stylesheets
+      index.js                 # import client startup through a single index entry point
+      routes.js                # set up all routes in the app
+    server/
+      index.js                 # import server startup through a single index entry point
+
+  api/                         # business logic
+
+
+  ui/
+    components/                # all reusable components in the application
+                               # can be split by domain if there are many
+    layouts/                   # wrapper components for behaviour and visuals
+    pages/                     # entry points for rendering used by the router
+
+client/
+  main.js                      # client entry point, imports all client code
+
+server/
+  main.js                      # server entry point, imports all server code
